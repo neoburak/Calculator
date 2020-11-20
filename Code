@@ -346,7 +346,7 @@ namespace Calculator
                             Num2 = Convert.ToDouble(textBox.Text);
                             if (Num2 == 0)
                             {
-                                MessageBox.Show("Sıfıra bölünme hatası");
+                                MessageBox.Show("Zeror Div Error");
                                 textBox.Text = "0";
                                 break;
                             }
@@ -366,7 +366,7 @@ namespace Calculator
             }
             catch (Exception)
             {
-                MessageBox.Show("Eksik Değer.");
+                MessageBox.Show("Missing Value.");
                 textBox.Text = "";
                 lblFirstNumber.Text = "";
                 
